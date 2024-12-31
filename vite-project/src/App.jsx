@@ -18,7 +18,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About college="kongu engineering " clg1="kongu arts" clg2 ="kongu naturopathy"/>}/>
     <Route path='/gallery' element={<Gallery/>}/>
-    <Route path='/contact' element={<Contact name="Dhamayandhi.R" email="dhamayandhir.22cse@kongu.edu" contact="9344337350"/>}/>
+    <Route path='/contact' element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
       
