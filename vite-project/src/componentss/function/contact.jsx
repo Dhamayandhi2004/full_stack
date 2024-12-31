@@ -3,8 +3,17 @@ const Contact = () => {
     alert("you visiting this page..");
   }
   const handleclick1=()=>{
-    alert("Send the message successfully..")
+    const name=document.getElementById("name");
+    const email=document.getElementById("email");
+    const msg=document.getElementById("msg");
+    if(name!=''||email!=''||msg!=''){
+      alert('please fill all fields..');
+    }
+    else{
+    alert("Send the message successfully..");
+    }
   }
+
   return (
     <section>
       <h1>This is Contact page.</h1>
@@ -19,17 +28,17 @@ const Contact = () => {
       <footer className="foot">
         <p>
           <label><strong>
-            Name: <input type="text" placeholder="Enter your name" />
+            Name: <input type="text" id="name" placeholder="Enter your name" />
           </strong></label>
         </p>
         <p>
           <label><strong>
-            Email: <input type="text" placeholder="Enter your email" />
+            Email: <input type="text" id="email"  placeholder="Enter your email" />
             </strong> </label>
         </p>
         <p>
           <label><strong>
-            Message: <input type="text" placeholder="Enter your Message" />
+            Message: <input type="text"  id="msg" placeholder="Enter your Message" />
             </strong> </label>
         </p>
         <button
